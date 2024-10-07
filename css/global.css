@@ -109,4 +109,8 @@
   --title-font: "Playfair Display";
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
