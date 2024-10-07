@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #FFF;
+    color: #333;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px 0 20px 0; 
+    background-color: #FFF;
+}
+
+.fondo-ondulado {
+    position: absolute;
+    top: -130px; 
+    left: 0;
+    width: 100%;
+    height: 450px; 
+    z-index: 0; 
+}
+
+.header-text {
+    position: relative;
+    z-index: 1; 
+    color: white; 
+    padding-top: 20px; 
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; 
+    padding: 20px;
+    max-width: 1200px;
+    margin: 80px auto; 
+    position: relative; 
+    z-index: 1; 
+}
+
+.noticia {
+    background-color: #FFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noticia img {
+    width: 100%;
+    height: auto;
+}
+
+.noticia-header {
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.noticia-header.color1 {
+    background-color: #C8CFA0; /* Tono verde suave */
+}
+
+.noticia-header.color2 {
+    background-color: #F9C986; /* Tono naranja suave */
+}
+
+.noticia-header.color3 {
+    background-color: #EF9C66; /* Otro tono verde */
+}
+
+.noticia-header.color4 {
+    background-color: #78ABA8; /* Tono cálido */
+}
+
+.noticia-header.color5 {
+    background-color: #C8CFA0; /* Verde claro */
+}
+
+.noticia-header.color6 {
+    background-color: #F9C986; /* Tono coral */
+}
+
+.noticia-header p {
+    font-weight: 600;
+}
+
+.noticia-header span {
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 5px;
+    font-weight: 400;
+}
