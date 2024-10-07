@@ -4,9 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/global.css" />
-    <title>Document</title>
+
+    <link rel="stylesheet" href="css/comedores.css" />
+    <script src="./components/CustomElements.js"></script>
+    <title>comedores</title>
   </head>
   <body>
-    paginita de comedores
+    <c-navbar></c-navbar>
+
+            <div class="enc">
+              <h1>Comedores</h1>
+                <p>Le traemos los comedores en los que se enfocan para entregar los alimentos diarios de manera gratuita</p>
+                <img src="/img/personas.webp" alt="personas" class="enc-img">
+            </div>
+            <section class="comedores">
+                <div class="comedor">
+                    <img src="/img/santalucia.webp" alt="santa-lucia" class="comedor-image"></img>
+                    <p>Comedor Santa Lucía de Barracas</p>
+                </div>
+                <div class="comedor">
+                    <img src="/img/ciudadanito.webp" alt="ciudadanitos" class="comedor-image"></img>
+                    <p>Comedor Centro Comunitario Ciudadanitos</p>
+                </div>
+                <div class="comedor">
+                    <img src="/img/amanecer.webp" alt="amanecer" class="comedor-image"></img>
+                    <p>Comedor Cooperativa Amanecer de los Cartoneros - MTE/CTEP</p>
+                </div>
+            </section>
+
+            <div class="mail">
+                <p>¿Conoces algún otro comedor en la comuna 4?</p>
+                <p>Contáctanos: alimentandopersonas@gmail.com</p>
+            </div>
+
+      <c-footer></c-footer>
   </body>
 </html>
+
