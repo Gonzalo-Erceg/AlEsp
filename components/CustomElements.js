@@ -53,27 +53,26 @@ class NavBar extends HTMLElement {
 
         </div>
         <ul class="nav-links">
-          <li><a href="#">Novedades</a></li>
-          <li><a href="#">Ayudá a la causa</a></li>
-          <li><a href="#">Comedores</a></li>
+          <li><a href="/news.html">Novedades</a></li>
+          <li><a href="/apoyo.html">Ayudá a la causa</a></li>
+          <li><a href="/comedores.html">Comedores</a></li>
         </ul>
         <div class="login-container">
-          <a href="#" class="login-btn">inicia sesión/regístrate</a>
+          <a href="/auth.html" class="login-btn">inicia sesión/regístrate</a>
         </div>
       </nav>
 </header>
 
   <style>
-    body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+
   
   /* Header and navigation */
   header {
     background: linear-gradient(to right, #78ABA8,#78ABA8,#C8CFA0);
     padding: 10px 20px;
+    position:relative;
+    z-index:1;
+    font-family: var(--text-font), sans-serif;
   }
   
   .navbar {
@@ -124,6 +123,8 @@ class NavBar extends HTMLElement {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+      font-family: var(--text-font), sans-serif;
+
   }
   
   .login-btn:hover {
