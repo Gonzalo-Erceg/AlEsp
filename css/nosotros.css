@@ -20,3 +20,57 @@
   align-items: center;
   justify-content: space-evenly;
 }
+.fotos {
+  background-color: var(--verde-c);
+  padding-bottom: 30px;
+}
+.fotos .imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 700px;
+  margin: auto;
+}
+.fotos div img {
+  width: 200px;
+  height: auto;
+}
+.imgs div h5 {
+  font-size: 20px;
+}
+.imgs div {
+  color: #ffffff;
+  text-align: center;
+}
+.colaborar {
+  background-color: #f9c986;
+}
+.colaborar img {
+  width: 300px;
+}
+.colaborar .pagos {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+.pagos > div {
+  border-left: 4px solid #fff;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pagos h2,
+.pagos h3 {
+  font-size: 32px;
+}
+.pagos p {
+  font-size: 20px;
+}
+.final {
+  background-color: var(--naranja);
+}
