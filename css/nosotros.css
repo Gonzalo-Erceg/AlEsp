@@ -1,0 +1,22 @@
+.about {
+  background-color: var(--verde-o);
+  color: #ffffff;
+  padding: 30px;
+}
+.about h2 {
+  font-family: var(--title-font);
+  text-align: center;
+  font-size: 48px;
+}
+
+.about p {
+  font-family: var(--text-font);
+  width: 500px;
+  font-size: 20px;
+}
+.about div {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

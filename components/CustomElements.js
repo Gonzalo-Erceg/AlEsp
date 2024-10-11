@@ -216,7 +216,7 @@ class Footer extends HTMLElement {
           <li><a href="#">Preguntas frecuentes</a></li>
           <li><a href="#">Políticas de privacidad</a></li>
           <li><a href="#">Ser voluntario</a></li>
-          <li><a href="#">Nosotros</a></li>
+          <li><a href="/nosotros.html">Nosotros</a></li>
         </ul>
       </div>
       <div class="social-media">
