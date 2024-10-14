@@ -1,0 +1,45 @@
+.section1 img {
+    width: 450px;
+    height: auto;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.titlecontiner {
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.titlecontiner h1 {
+    font-size: 48px;
+}
+
+.titlecontiner h2{
+    font-size: 32px;
+    font-style: italic;
+}
+
+.titlecontiner button {
+    border: none;
+    outline: none;
+    background-color: var(--verde-o);
+    padding:10px 20px;
+    border-radius: 27px;
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.titlecontiner button:hover {
+    background-color: var(--verde-c);
+}
+
+.titlecontiner button:active{
+    background-color: var(--verde-o);
+}
