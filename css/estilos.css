@@ -3,36 +3,36 @@
     margin: 0;
     padding: 0;
     font-size: 24px;
-  }
+}
   /* ! seccion principal */
-  .seccion-principal{
+.seccion-principal{
     background-color: #78ABA8;
     height: 150vh;
-  }
-  .img-principales{
+}
+.img-principales{
     display: flex;
     justify-content: space-around;
-  }
-  hr {
+}
+hr {
     border: none;
     border-top: 5px dashed #ffffff;
     margin: 20px 0;
     margin-top: 100px;
     padding-bottom: 100px;
-  }
-  .participacion{
+}
+.participacion{
     display: flex;
     justify-items: center;
     justify-content: center;
     align-items: center;
-  }
-  .participacion div{
+}
+.participacion div{
     text-align: center;
-  }
-  p{
+}
+p{
     font-family: "Source Sans Pro";
-  }
-  button{
+}
+button{
     background-color: #78ABA8;
     border-color: white;
     border-radius: 20px;
@@ -40,37 +40,42 @@
     width: 150px;
     margin-top: 25px;
     cursor: pointer;
-  }
-  h1,h2,h3{
+}
+h1,h2{
     text-align: center;
     padding-top: 75px;
     padding-bottom: 30px;
-  }
-  .slogan{
+}
+.titulos-terciarios{
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.slogan{
     text-align: center;
   
-  }
-  .slogan-secundario{
+}
+.slogan-secundario{
     text-align: center;
     padding-bottom: 50px;
-  }
+}
   /* ! seccion voluntariados */
-  .seccion-voluntariados{
+.seccion-voluntariados{
     background-color: #C8CFA0;
     height: 90vh;
     text-align: center;
-  }
-  .seccion-voluntariados img{
+}
+.seccion-voluntariados img{
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto
-  }
-  .seccion-voluntariados p{
+}
+.seccion-voluntariados p{
     margin-bottom: 50px;
-  }
+}
   /* ! seccion voluntariado personal */
-  .seccion-voluntariado-personal{
+.seccion-voluntariado-personal{
     background-color: #F9C986;
     height: 90vh;
     display: flex;
@@ -78,35 +83,59 @@
     justify-content: center;
     align-items: center;
     gap: 155px;
-  }
-  .seccion-voluntariado-personal div:first-of-type{
+}
+.seccion-voluntariado-personal div:first-of-type{
   width: 50%;
-  }
+}
   
   /* ! seccion voluntariado coorporativo */
-  .seccion-voluntariado-coorp{
+.seccion-voluntariado-coorp{
     background-color: #EF9C66;
     height: 90vh;
-  }
-  .seccion-voluntariado-coorp p{
+}
+.seccion-voluntariado-coorp p{
     text-align: center;
-  }
-  form{
+}
+form{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .custom-textarea {
+}
+.custom-textarea {
     width: 400px;  /* Ancho específico */
-    height: 200px;  /* Alto específico */
+    height: 275px;  /* Alto específico */
     resize: none;  /* Evitar que el usuario cambie el tamaño */
     padding: 10px;  /* Espacio interior para el texto */
     border: 1px solid #ccc;  /* Borde */
     border-radius: 4px;  /* Bordes redondeados */
     font-size: 16px;  /* Tamaño de fuente */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);  /* Sombra */
-  }
-  input{
-    margin: 30px;
-    /* border-bottom: #78ABA8 5px; */
-  }
+    border-radius: 5px;
+    color: black;
+    margin-left: 45px;
+}
+input{
+    margin: 25px;
+    border-radius: 15px;
+    color: black;
+    width: 450px;
+}
+.fondoAlerta{
+    background-color: red;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    border-radius: 15px;
+    width: 450px;
+    margin-left: 25px;
+}
+.buttonEnviar{
+    background-color: #78ABA8;
+    border-color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    margin-top: 25px;
+    cursor: pointer;
+    margin-left: 80px;
+}
