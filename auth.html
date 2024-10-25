@@ -35,14 +35,18 @@
           <button>Iniciar sesion</button>
         </form>
         <form class="form" id="register">
-          <input type="text" placeholder="Nombre" />
-          <input type="text" placeholder="Email" />
-          <input type="password" placeholder="Contraseña" />
-          <input type="password" placeholder="confirmar Contraseña" />
+          <input type="text" placeholder="Nombre" name="name" />
+          <input type="text" placeholder="Email" name="email" />
+          <input type="password" placeholder="Contraseña" name="password" />
+          <input
+            type="password"
+            placeholder="confirmar Contraseña"
+            name="repassword"
+          />
           <button>Registrarse</button>
         </form>
       </div>
     </main>
   </body>
-  <script src="js/auth.js"></script>
+  <script src="js/auth.js" type="module"></script>
 </html>
