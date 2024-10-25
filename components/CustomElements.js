@@ -73,6 +73,7 @@ class NavBar extends HTMLElement {
     position:relative;
     z-index:1;
     font-family: var(--text-font), sans-serif;
+    box-shadow:  0px 0px 10px #5a5a5a
   }
   
   .navbar {
