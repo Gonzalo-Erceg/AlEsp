@@ -16,9 +16,8 @@
 hr {
     border: none;
     border-top: 5px dashed #ffffff;
-    margin: 20px 0;
-    margin-top: 100px;
-    padding-bottom: 100px;
+    width: 75%;
+    margin: 100px auto;
 }
 .participacion{
     display: flex;
@@ -33,8 +32,10 @@ p{
     font-family: "Source Sans Pro";
 }
 button{
+    border: none;
+    outline: none;
     background-color: #78ABA8;
-    border-color: white;
+    border: 2px solid #ffffff;
     border-radius: 20px;
     height: 40px;
     width: 150px;
@@ -47,13 +48,16 @@ h1,h2{
     padding-bottom: 30px;
 }
 .titulos-terciarios{
-  font-size: 40px;
-  text-align: center;
-  padding-bottom: 50px;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
 }
 .slogan{
     text-align: center;
-  
+}
+.grafico{
+    width: 550px;
+    height: auto;
 }
 .slogan-secundario{
     text-align: center;
@@ -77,17 +81,32 @@ h1,h2{
   /* ! seccion voluntariado personal */
 .seccion-voluntariado-personal{
     background-color: #F9C986;
-    height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 155px;
+    padding: 15px 0;
+}
+.fondoBurbuja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("/img/apoyo/fondoBurbuja.png");
+    height: 450px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.texto-voluntariado{
+    width: 50%;
 }
 .seccion-voluntariado-personal div:first-of-type{
-  width: 50%;
+    width: 50%;
 }
-  
   /* ! seccion voluntariado coorporativo */
 .seccion-voluntariado-coorp{
     background-color: #EF9C66;
@@ -119,6 +138,8 @@ input{
     border-radius: 15px;
     color: black;
     width: 450px;
+    padding: 8px 16px;
+    font-size: 16px;
 }
 .fondoAlerta{
     background-color: red;
