@@ -3,23 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="/components/CustomElements.js"></script>
     <title>Document</title>
   </head>
   <body>
+    <c-navbar></c-navbar>
     <!-- ! seccion principal -->
     <main class="seccion-principal">
       <h1>DONA Y MEJORA UNA VIDA</h1>
-      <p class="slogan">Cada donación marca la diferencia en la vida de quienes más lo necesitan. Con tu apoyo, brindamos comida, ropa y esperanza a miles de personas.</p>
+      <p class="slogan">
+        Cada donación marca la diferencia en la vida de quienes más lo
+        necesitan. Con tu apoyo, brindamos comida, ropa y esperanza a miles de
+        personas.
+      </p>
       <p class="slogan-secundario">¡Únete hoy y ayuda a cambiar una vida!</p>
 
       <div class="img-principales">
-          <img src="/img/apoyo/1.png" alt="">
-          <img src="/img/apoyo/2.png" alt="">
+        <img src="/img/apoyo/1.png" alt="" />
+        <img src="/img/apoyo/2.png" alt="" />
       </div>
 
-      <hr>
+      <hr />
 
       <div class="participacion">
           <div>
@@ -35,16 +42,17 @@
               <button>Link de Pago</button>
           </div>
       </div>
-      </main>
+    </main>
 
-      <!-- ! Seccion voluntariados -->
-      <div class="seccion-voluntariados">
-          <h2>VOLUNTARIADOS</h2>
-          <p>
-              En esta sección podrás revisar nuestras actividades y otros materiales como presentaciones, seminarios, artículos de prensa y mucho más.
-          </p>
-          <img src="/img/apoyo/img-productos.jpg" alt="">
-      </div>
+    <!-- ! Seccion voluntariados -->
+    <div class="seccion-voluntariados">
+      <h2>VOLUNTARIADOS</h2>
+      <p>
+        En esta sección podrás revisar nuestras actividades y otros materiales
+        como presentaciones, seminarios, artículos de prensa y mucho más.
+      </p>
+      <img src="/img/apoyo/img-productos.jpg" alt="" />
+    </div>
 
       <!-- ! Seccion voluntariado personal -->
       <div class="seccion-voluntariado-personal">
@@ -59,14 +67,17 @@
           </div>
       </div>
 
-      <!-- ! Seccion voluntariado coorporativo -->
-      <div class="seccion-voluntariado-coorp">
-          <h2>VOLUNTARIADO CORPORATIVO</h2>
-          <p>
-              A través del Voluntariado Corporativo, tu empresa puede participar en iniciativas que fortalecen comunidades, ayudando a quienes más lo necesitan. Únete a nuestras actividades y crea un impacto positivo en conjunto con tu equipo.
-          </p>
+    <!-- ! Seccion voluntariado coorporativo -->
+    <div class="seccion-voluntariado-coorp">
+      <h2>VOLUNTARIADO CORPORATIVO</h2>
+      <p>
+        A través del Voluntariado Corporativo, tu empresa puede participar en
+        iniciativas que fortalecen comunidades, ayudando a quienes más lo
+        necesitan. Únete a nuestras actividades y crea un impacto positivo en
+        conjunto con tu equipo.
+      </p>
 
-          <h2>FORMULARIO</h2>
+      <h2>FORMULARIO</h2>
 
           <form id="formulario" action="#">
               <div>
@@ -88,6 +99,6 @@
           </form>
       </div>
 
-      <script src="formulario.js"></script>
+      <script src="/js/formulario.js"></script>
 </body>
 </html>

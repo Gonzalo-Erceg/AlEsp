@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function(){
     const btnReset = document.querySelector('#formulario button[type="reset"]');
 
     //Agregando eventos para los distintos inputs
-    // blur aparece cuando se hace click fuera de un campo
-    inputEmpresa.addEventListener("input", validar);
-    inputTelefono.addEventListener("input", validar);
-    inputEmail.addEventListener("input", validar);
-    inputMensaje.addEventListener("input", validar);
+    // input aparece cuando se hace click fuera de un campo
+    inputEmpresa.addEventListener("blur", validar);
+    inputTelefono.addEventListener("blur", validar);
+    inputEmail.addEventListener("blur", validar);
+    inputMensaje.addEventListener("blur", validar);
 
     btnSubmit.addEventListener("click", function(e){
         e.preventDefault();
