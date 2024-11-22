@@ -5,7 +5,7 @@ class NavBar extends HTMLElement {
     shadow.innerHTML = `
            <header>
     <nav class="navbar">
-        <div class="logo-container">
+        <a href="/" class="logo-container">
             <svg
    width="45"
    height="41"
@@ -51,7 +51,7 @@ class NavBar extends HTMLElement {
            d="m 84.956161,127.74619 5.867709,0 a 2,2 45 0 1 2,2 v 5.86771 a 2,2 135 0 1 -2,2 h -5.867709 a 2,2 45 0 1 -2,-2 v -5.86771 a 2,2 135 0 1 2,-2 z"
            transform="translate(1.8713896,13.021439)" /></g></g></g></svg>
 
-        </div>
+        </a>
         <ul class="nav-links">
           <li><a href="/news.html">Novedades</a></li>
           <li><a href="/apoyo.html">Ayudá a la causa</a></li>
