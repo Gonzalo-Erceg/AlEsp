@@ -1,6 +1,6 @@
 .about {
   background-color: var(--verde-o);
-  color: #ffffff;
+  color: var(--color);
   padding: 30px;
 }
 .about h2 {

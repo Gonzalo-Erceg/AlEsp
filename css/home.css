@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 70px 0;
+  min-height: 75vh;
 }
 
 .titlecontiner {
@@ -24,18 +24,44 @@
   font-style: italic;
 }
 
-.titlecontiner button {
-  border: none;
-  outline: none;
-  background-color: var(--verde-o);
-  padding: 10px 20px;
-  border-radius: 27px;
-  font-size: 26px;
-  color: #fff;
+.titlecontiner a {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5em 0.9em;
+  font-size: 24px;
+  position: relative;
+  overflow: hidden;
+  margin: 27px auto;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: content-box;
+  transition: 0.2s;
+  z-index: 1;
+  font-family: var(--text-font);
+  color: var(--color);
+  border-radius: 17px;
   cursor: pointer;
-  margin: 20px;
+  background-color: var(--verde-c);
+  text-decoration: none;
 }
-
+.titlecontiner a::before {
+  content: "";
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--verde-o);
+  transition: 0.3s ease;
+  display: block;
+  z-index: -1;
+  clip-path: circle(0% at 0 100%);
+}
+.titlecontiner a:hover::before {
+  clip-path: circle(141.2% at 0 100%);
+}
 .titlecontiner button:hover {
   background-color: var(--verde-c);
 }
@@ -46,7 +72,7 @@
 
 .section2 {
   background-color: var(--verde-o);
-  color: #fff;
+  color: var(--color);
   text-align: center;
   font-family: var(--title-font);
 }
@@ -79,40 +105,34 @@
 
 .section3 {
   background-color: var(--verde-c);
-  color: #fff;
+  color: var(--color);
   font-family: var(--title-font);
-  text-align: center;
+
   padding-bottom: 50px;
 }
 
 .section3 h2 {
-  font-size: 48px;
-}
-
-.section3 .Donantes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-.section3 p {
-  font-size: 32px;
-}
-
-.section3 img {
-  width: 400px;
-  height: auto;
+  font-size: 36px;
+  text-align: center;
+  margin: 75px 0;
 }
 
 .section3 div {
-  margin: 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section3 p {
+  font-size: 20px;
+  font-family: var(--text-font);
+  max-width: 700px;
 }
 
 .section4 {
   background-color: var(--amarillo);
-  color: #fff;
+  color: var(--color);
   font-family: var(--text-font);
+  min-height: 50vh;
 }
 
 .section4 .contenedor div {
@@ -123,30 +143,118 @@
 }
 
 .section4 h2 {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .section4 .contenedor {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  text-align: center;
+  font-size: 36px;
 }
 
-.section4 button {
-  border: none;
-  outline: none;
-  background: transparent;
-  border: 4px solid #fff;
-  border-radius: 27px;
-  padding: 19px 43px;
-  color: #fff;
-  margin-top: 20px;
+.section4 .contenedor a {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5em 0.9em;
+
+  position: relative;
+  overflow: hidden;
+
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: content-box;
+  transition: 0.2s;
+  z-index: 1;
+  font-family: inherit;
+  color: var(--color);
+  border-radius: 17px;
+  cursor: pointer;
+  background-color: var(--verde-c);
+  text-decoration: none;
+}
+.section4 .contenedor a::before {
+  content: "";
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--verde-o);
+  transition: 0.3s ease;
+  display: block;
+  z-index: -1;
+  clip-path: circle(0% at 0 100%);
+}
+
+.section4 .contenedor a:hover::before {
+  clip-path: circle(141.2% at 0 100%);
 }
 
 .section5 {
   background-color: var(--naranja);
-  color: #fff;
+  color: var(--color);
   text-align: center;
   font-size: 24px;
   height: 500px;
+}
+
+.valores {
+  text-align: center;
+  min-height: 75vh;
+  font-family: var(--text-font);
+  color: var(--color);
+}
+
+.valores > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+}
+.valores h2 {
+  font-family: var(--title-font);
+  font-size: 36px;
+  margin: 25px 0;
+}
+.valores .caja {
+  width: 250px;
+  aspect-ratio: 1/1;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.valores .caja h3 {
+  font-size: 24px;
+}
+
+.valores .caja p {
+  width: 150px;
+}
+.solidaridad {
+  border: 3px solid var(--naranja);
+}
+.solidaridad h3 {
+  color: var(--naranja);
+}
+.calidez {
+  border: 3px solid var(--amarillo);
+}
+.calidez h3 {
+  color: var(--amarillo);
+}
+.compromiso {
+  border: 3px solid var(--verde-c);
+}
+.compromiso h3 {
+  color: var(--verde-c);
+}
+.seguridad {
+  border: 3px solid var(--verde-o);
+}
+.seguridad h3 {
+  color: var(--verde-o);
 }
