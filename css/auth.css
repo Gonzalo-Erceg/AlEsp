@@ -5,7 +5,9 @@
   width: 500px;
   min-height: 700px;
   padding: 20px;
-  background-color: var(--verde-o);
+  background-color: #fff8;
+  border-radius: 12px;
+
   text-align: center;
   justify-content: space-evenly;
 }
@@ -13,12 +15,13 @@
   align-self: center;
 }
 .form-container h1 {
-  color: #fff;
+  color: var(--letra);
+
   font-family: var(--title-font);
   font-size: 32px;
 }
 .form-container h3 {
-  color: #fff;
+  color: var(--letra);
   font-style: italic;
   font-weight: 500;
   font-size: 20px;
@@ -57,10 +60,11 @@ input[name="form"] {
   box-sizing: content-box;
   border-radius: 12px;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--verde-c);
+  background-color: #fff;
   padding: 20px 0;
   position: relative;
   margin-top: 20px;
+  border: 3px solid var(--verde-c);
 }
 
 .radio-container::before {
@@ -68,7 +72,7 @@ input[name="form"] {
   width: 40%;
   height: 60%;
   border-radius: 6px;
-  background-color: var(--verde-o);
+  background-color: var(--naranja);
   position: absolute;
   top: 50%;
   z-index: 0;
@@ -84,7 +88,8 @@ input[name="form"] {
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
-  color: #fff;
+  color: var(--letra);
+
   position: relative;
   z-index: 1;
 }
@@ -106,13 +111,15 @@ input[name="form"] {
   display: flex;
 }
 .form button {
-  background-color: var(--naranja);
+  background-color: #fff;
   border: none;
   outline: none;
   border-radius: 12px;
   font-size: 20px;
   padding: 20px 0;
-  color: #fff;
+  color: var(--letra);
+  border: 3px solid var(--naranja);
   font-family: var(--text-font);
   font-weight: 900;
+  cursor: pointer;
 }
