@@ -42,7 +42,7 @@ button{
     margin-top: 25px;
     cursor: pointer;
 }
-h1,h2{
+h1,h2, h3{
     text-align: center;
     padding-top: 75px;
     padding-bottom: 30px;
@@ -94,7 +94,6 @@ h1,h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("/img/apoyo/fondoBurbuja.png");
     height: 450px;
     width: 100px;
     background-repeat: no-repeat;
@@ -159,4 +158,60 @@ input{
     margin-top: 25px;
     cursor: pointer;
     margin-left: 80px;
+}
+
+@media screen and (max-width: 600px) {
+    .img-principales{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+    }
+    .participacion{
+        display: flex;
+        flex-direction: column;
+        height: 830px;
+        padding: 400px 0 px 0px;
+    }
+    .seccion-voluntariados p{
+    margin-bottom: 370px;
+    }
+    .seccion-voluntariado-personal{
+        display: flex;
+        flex-direction: column;
+    }
+    .fondoBurbuja{
+        padding-top: 180px;
+        height: 700px;
+    }
+    .grafico{
+        width: 450px;
+    }
+    .texto-voluntariado{
+        width: 450px;
+    }
+    form{
+        /* margin-bottom: 150px; */
+        flex-direction: column;
+        height: 1050px;
+        margin-bottom: 1500px;
+    }
+    h2{
+        padding-bottom: 450px;
+    }
+    h3{
+        padding: 0px;
+    }
+    .seccion-voluntariado-coorp{
+        height: 1800px;
+    }
+    .titulo-coorporativo{
+        padding-bottom: 5px;
+
+    }
+    .parrafo-coorpo{
+        margin: 110px;
+    }
+    button{
+        margin: 25px;
+    }
 }
