@@ -1,162 +1,205 @@
-*{
-    color: white;
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
+/* ! seccion principal */
+.seccion-principal {
+  background-color: #78aba8;
+  min-height: 100vh;
 }
-  /* ! seccion principal */
-.seccion-principal{
-    background-color: #78ABA8;
-    height: 150vh;
+.img-principales {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.img-principales{
-    display: flex;
-    justify-content: space-around;
+.img-principales img {
+  max-width: 700px;
+  width: 90%;
 }
 hr {
-    border: none;
-    border-top: 5px dashed #ffffff;
-    width: 75%;
-    margin: 100px auto;
+  border: none;
+  border-top: 5px dashed var(--color);
+  width: 75%;
+  margin: 100px auto;
 }
-.participacion{
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-}
-.participacion div{
-    text-align: center;
-}
-p{
-    font-family: "Source Sans Pro";
-}
-button{
-    border: none;
-    outline: none;
-    background-color: #78ABA8;
-    border: 2px solid #ffffff;
-    border-radius: 20px;
-    height: 40px;
-    width: 150px;
-    margin-top: 25px;
-    cursor: pointer;
-}
-h1,h2{
-    text-align: center;
-    padding-top: 75px;
-    padding-bottom: 30px;
-}
-.titulos-terciarios{
-    font-size: 40px;
-    text-align: center;
-    padding-bottom: 50px;
-}
-.slogan{
-    text-align: center;
-}
-.grafico{
-    width: 550px;
-    height: auto;
-}
-.slogan-secundario{
-    text-align: center;
-    padding-bottom: 50px;
-}
-  /* ! seccion voluntariados */
-.seccion-voluntariados{
-    background-color: #C8CFA0;
-    height: 90vh;
-    text-align: center;
-}
-.seccion-voluntariados img{
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto
-}
-.seccion-voluntariados p{
-    margin-bottom: 50px;
-}
-  /* ! seccion voluntariado personal */
-.seccion-voluntariado-personal{
-    background-color: #F9C986;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 155px;
-    padding: 15px 0;
-}
-.fondoBurbuja{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url("/img/apoyo/fondoBurbuja.png");
-    height: 450px;
-    width: 100px;
-    background-repeat: no-repeat;
-    background-position: center;
+.participacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
+  flex-wrap: wrap;
 }
-.texto-voluntariado{
-    width: 50%;
+.participacion div {
+  text-align: center;
+  max-width: 700px;
+  height: 300px;
 }
-.seccion-voluntariado-personal div:first-of-type{
-    width: 50%;
+p {
+  font-family: "Source Sans Pro";
 }
-  /* ! seccion voluntariado coorporativo */
-.seccion-voluntariado-coorp{
-    background-color: #EF9C66;
-    height: 90vh;
+.participacion button {
+  border: none;
+  outline: none;
+  background-color: #78aba8;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  height: 40px;
+  width: 150px;
+  margin-top: 25px;
+  cursor: pointer;
 }
-.seccion-voluntariado-coorp p{
-    text-align: center;
+h1,
+h2 {
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 30px;
 }
-form{
+.titulos-terciarios {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.slogan {
+  text-align: center;
+}
+.grafico {
+  width: 550px;
+  height: auto;
+}
+.slogan-secundario {
+  text-align: center;
+  padding-bottom: 50px;
+}
+/* ! seccion voluntariados */
+.seccion-voluntariados {
+  background-color: #c8cfa0;
+  height: 90vh;
+  text-align: center;
+}
+.seccion-voluntariados img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.seccion-voluntariados p {
+  margin-bottom: 50px;
+}
+/* ! seccion voluntariado personal */
+.seccion-voluntariado-personal {
+  background-color: #f9c986;
+  min-height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+.seccion-voluntariado-personal img {
+  max-width: 700px;
+  width: 90%;
+}
+
+.fondoBurbuja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 450px;
+  width: 100px;
+}
+.texto-voluntariado {
+  max-width: 400px;
+  width: 100%;
+}
+.seccion-voluntariado-personal div:first-of-type {
+  width: 50%;
+}
+/* ! seccion voluntariado coorporativo */
+.seccion-voluntariado-coorp {
+  background-color: #ef9c66;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+.seccion-voluntariado-coorp p {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editable {
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  height: 275px; /* Alto específico */
+  resize: none; /* Evitar que el usuario cambie el tamaño */
+  padding: 10px; /* Espacio interior para el texto */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  border-radius: 5px;
+  color: black;
+
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+input {
+  color: var(--color);
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 7px solid var(--verde-o);
+  padding: 8px 16px;
+  font-size: 16px;
+}
+.inputContainer {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.buttonEnviar {
+  background-color: var(--verde-o);
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 150px;
+  color: var(--color);
+  cursor: pointer;
+}
+.buttonEnviar:hover {
+  background-color: var(--verde-c);
+}
+.fondoAlerta {
+  position: absolute;
+}
+
+.inputContainer div .fondoAlerta {
+  padding: 0;
+  color: #f00;
+}
+
+@media (max-width: 800px) {
+  .inputContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
-.custom-textarea {
-    width: 400px;  /* Ancho específico */
-    height: 275px;  /* Alto específico */
-    resize: none;  /* Evitar que el usuario cambie el tamaño */
-    padding: 10px;  /* Espacio interior para el texto */
-    border: 1px solid #ccc;  /* Borde */
-    border-radius: 4px;  /* Bordes redondeados */
-    font-size: 16px;  /* Tamaño de fuente */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);  /* Sombra */
-    border-radius: 5px;
-    color: black;
-    margin-left: 45px;
-}
-input{
-    margin: 25px;
-    border-radius: 15px;
-    color: black;
-    width: 450px;
-    padding: 8px 16px;
-    font-size: 16px;
-}
-.fondoAlerta{
-    background-color: red;
-    color: white;
-    padding: 2px;
-    text-align: center;
-    border-radius: 15px;
-    width: 450px;
-    margin-left: 25px;
-}
-.buttonEnviar{
-    background-color: #78ABA8;
-    border-color: white;
-    border-radius: 20px;
-    height: 40px;
-    width: 150px;
-    margin-top: 25px;
-    cursor: pointer;
-    margin-left: 80px;
+  }
+  .inputContainer div {
+    width: 90%;
+  }
 }

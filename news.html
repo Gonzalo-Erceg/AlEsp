@@ -12,11 +12,23 @@
   <body>
     <c-navbar></c-navbar>
     <header class="header">
-      <img
-        src="img/top-novedades.png"
-        alt="Onda superior"
-        class="fondo-ondulado"
-      />
+      <div class="fondito">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 1440 587"
+        >
+          <path
+            fill="#85BCA6"
+            d="M1440 547.867l-34.59-1.468c-34.59-1.956-103.77-4.891-172.63-20.545-69.03-15.653-137.56-43.046-206.59-83.158-68.857-40.112-138.039-91.963-206.899-78.267-69.022 13.697-137.56 93.92-206.582 101.258-68.86 7.337-138.042-58.211-206.903-52.341-69.021 5.87-137.56 82.18-206.581 123.27-68.861 40.601-138.043 45.493-172.634 47.938L-8 587V0H1440v547.867z"
+          />
+          <path
+            fill="#78ABA8"
+            d="M1440 362.274l-34.59-16.155c-34.59-16.645-103.77-48.956-172.63-67.07-69.03-18.114-137.56-21.051-206.59-3.427-68.857 18.114-138.039 57.278-206.899 53.852-69.022-2.938-137.56-48.956-206.582-86.163-68.86-37.696-138.042-67.069-206.903-66.09-69.021.489-137.56 31.821-206.581 36.717-68.861 4.895-138.043-16.645-172.634-26.926L-8 176.242V0h207.225a20322641496626.758 20322641496626.758 0 00413.484 0H1440v362.274z"
+          />
+        </svg>
+      </div>
+
       <div class="header-text">
         <h1>NOTICIAS Y EVENTOS</h1>
         <p>
@@ -27,7 +39,7 @@
     </header>
 
     <section class="noticias">
-      <div class="noticia">
+      <a href="/articulo.html" class="noticia">
         <div class="noticia-header color1">
           <p>“El Poder de la comunidad” | Colecta Anual 2024</p>
           <span
@@ -36,8 +48,8 @@
           >
         </div>
         <img src="/img/news/5.png" alt="Noticia 1" />
-      </div>
-      <div class="noticia">
+      </a>
+      <a href="/articulo.html" class="noticia">
         <div class="noticia-header color2">
           <p>“El Poder de la comunidad” | Colecta Anual 2024</p>
           <span
@@ -46,8 +58,8 @@
           >
         </div>
         <img src="/img/news/3.png" alt="Noticia 2" />
-      </div>
-      <div class="noticia">
+      </a>
+      <a href="/articulo.html" class="noticia">
         <div class="noticia-header color3">
           <p>“El Poder de la comunidad” | Colecta Anual 2024</p>
           <span
@@ -56,8 +68,8 @@
           >
         </div>
         <img src="/img/news/6.png" alt="Noticia 3" />
-      </div>
-      <div class="noticia">
+      </a>
+      <a href="/articulo.html" class="noticia">
         <div class="noticia-header color4">
           <p>“El Poder de la comunidad” | Colecta Anual 2024</p>
           <span
@@ -66,8 +78,8 @@
           >
         </div>
         <img src="/img/news/4.png" alt="Noticia 4" />
-      </div>
-      <div class="noticia">
+      </a>
+      <a href="/articulo.html" class="noticia">
         <div class="noticia-header color5">
           <p>“El Poder de la comunidad” | Colecta Anual 2024</p>
           <span
@@ -76,8 +88,8 @@
           >
         </div>
         <img src="/img/news/1.png" alt="Noticia 5" />
-      </div>
-      <div class="noticia">
+      </a>
+      <a href="/articulo.html" class="noticia">
         <div class="noticia-header color6">
           <p>“El Poder de la comunidad” | Colecta Anual 2024</p>
           <span
@@ -86,7 +98,8 @@
           >
         </div>
         <img src="/img/news/2.png" alt="Noticia 6" />
-      </div>
+      </a>
     </section>
+    <c-footer></c-footer>
   </body>
 </html>

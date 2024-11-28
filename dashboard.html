@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/userpanel.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <title>Panel de usuario</title>
+  </head>
+  <body>
+    <main>
+      <section class="section1">
+        <button onclick="loadContent('donations')">Donar</button>
+        <div></div>
+        <button onclick="loadContent('my-donations')">Tus donaciones</button>
+        <div></div>
+        <button onclick="loadContent('voluntary')">Voluntariado</button>
+      </section>
+      <section class="section2" id="content-area">
+        <div class="voluntaryContainer">
+          <h1>¿Tenes ganas de ayudar? Sumate a nuestra red de voluntarios</h1>
+          <form id="form">
+            <input placeholder="Nombre" name="name" />
+
+            <input placeholder="Apellido" name="lastname" />
+
+            <input placeholder="Fecha de nacimiento" type="date" />
+
+            <input placeholder="DNI" />
+
+            <input placeholder="Teléfono" />
+
+            <textarea placeholder="Cuéntanos que podes aportar"></textarea>
+            <button class="submitButton">Postularse</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./js/panel.js"></script>
+  <script src="./js/protected.js"></script>
+</html>
