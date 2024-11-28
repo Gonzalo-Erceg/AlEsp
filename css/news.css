@@ -1,13 +1,7 @@
-body {
-  background-color: #fff;
-  color: #333;
-}
-
 .header {
   position: relative;
   text-align: center;
   padding: 20px 0 20px 0;
-  background-color: #fff;
 }
 
 .fondo-ondulado {
@@ -22,7 +16,7 @@ body {
 .header-text {
   position: relative;
   z-index: 1;
-  color: white;
+  color: var(--color);
   padding-top: 20px;
 }
 
@@ -40,7 +34,9 @@ header p {
 }
 
 .noticias {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   padding: 20px;
@@ -49,9 +45,15 @@ header p {
   position: relative;
   z-index: 1;
 }
+.fondito {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
 
 .noticia {
-  background-color: #fff;
+  text-decoration: none;
+  max-width: 500px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -65,33 +67,21 @@ header p {
 .noticia-header {
   padding: 15px;
   font-size: 1rem;
-  color: white;
+  color: var(--color);
   text-align: left;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--title-font), sans-serif;
 }
 
-.noticia-header.color1 {
-  background-color: #c8cfa0; /* Tono verde suave */
+.noticias .noticia:nth-child(3n + 1) .noticia-header {
+  background-color: var(--naranja); /* Primer elemento en el patrón */
 }
 
-.noticia-header.color2 {
-  background-color: #f9c986; /* Tono naranja suave */
+.noticias .noticia:nth-child(3n + 2) .noticia-header {
+  background-color: var(--verde-c); /* Segundo elemento en el patrón */
 }
 
-.noticia-header.color3 {
-  background-color: #ef9c66; /* Otro tono verde */
-}
-
-.noticia-header.color4 {
-  background-color: #78aba8; /* Tono cálido */
-}
-
-.noticia-header.color5 {
-  background-color: #c8cfa0; /* Verde claro */
-}
-
-.noticia-header.color6 {
-  background-color: #f9c986; /* Tono coral */
+.noticias .noticia:nth-child(3n) .noticia-header {
+  background-color: var(--verde-o); /* Tercer elemento en el patrón */
 }
 
 .noticia-header p {
@@ -103,4 +93,13 @@ header p {
   display: block;
   margin-top: 5px;
   font-weight: 400;
+}
+
+@media (max-width: 756px) {
+  .header h1 {
+    font-size: 24px;
+  }
+  .header p {
+    font-size: 16px;
+  }
 }

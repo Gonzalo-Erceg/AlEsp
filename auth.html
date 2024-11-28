@@ -30,9 +30,9 @@
           </div>
         </header>
         <form class="form show" id="login">
-          <input type="text" placeholder="Email" />
-          <input type="password" placeholder="Contraseña" />
-          <button>Iniciar sesion</button>
+          <input type="text" name="email" placeholder="Email" />
+          <input type="password" name="password" placeholder="Contraseña" />
+          <button id="boton-login">Iniciar sesion</button>
         </form>
         <form class="form" id="register">
           <input type="text" placeholder="Nombre" name="name" />
@@ -43,8 +43,17 @@
             placeholder="confirmar Contraseña"
             name="repassword"
           />
-          <button>Registrarse</button>
+          <button id="boton-register">Registrarse</button>
         </form>
+      </div>
+      <div id="error-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <span class="close-button" id="close-modal">cerrar</span>
+          <h2 id="error-title">Error</h2>
+          <p id="error-message">
+            Algo salió mal. Por favor, inténtalo de nuevo.
+          </p>
+        </div>
       </div>
     </main>
   </body>

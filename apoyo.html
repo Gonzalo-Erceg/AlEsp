@@ -4,123 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
     <script src="/components/CustomElements.js" type="module"></script>
     <title>Apoya a la causa</title>
   </head>
   <body>
     <c-navbar></c-navbar>
-    <!-- ! seccion principal -->
-    <main class="seccion-principal">
-      <h1>DONA Y MEJORA UNA VIDA</h1>
-      <p class="slogan">
-        Cada donación marca la diferencia en la vida de quienes más lo
-        necesitan. Con tu apoyo, brindamos comida, ropa y esperanza a miles de
-        personas.
-      </p>
-      <p class="slogan-secundario">¡Únete hoy y ayuda a cambiar una vida!</p>
-
-      <div class="img-principales">
-        <img src="/img/apoyo/1.png" alt="" />
-        <img src="/img/apoyo/2.png" alt="" />
-      </div>
-
-      <hr />
-
-      <div class="participacion">
-        <div>
-          <h3 class="titulos-terciarios">Hazte Socio.</h3>
-          <p>
-            Dona un monto mensual que será cargado a tu cuenta (pago con débito
-            y crédito). Elige el monto de tu donación:
-          </p>
-          <button>Hazte Socio</button>
-        </div>
-        <div>
-          <h3 class="titulos-terciarios">Donacion Unica.</h3>
-          <p>
-            Puedes aportar transfiriendo el monto que tú quieras directamente a
-            nuestra cuenta corriente.
-          </p>
-          <button>Link de Pago</button>
-        </div>
-      </div>
-    </main>
-
-    <!-- ! Seccion voluntariados -->
-    <div class="seccion-voluntariados">
-      <h2>VOLUNTARIADOS</h2>
-      <p>
-        En esta sección podrás revisar nuestras actividades y otros materiales
-        como presentaciones, seminarios, artículos de prensa y mucho más.
-      </p>
-      <img src="/img/apoyo/img-productos.jpg" alt="" />
-    </div>
-
-    <!-- ! Seccion voluntariado personal -->
-    <div class="seccion-voluntariado-personal">
-      <div class="fondoBurbuja">
-        <h2>VOLUNTARIADO DE PERSONAL</h2>
-        <p class="texto-voluntariado">
-          Consiste en participar de las actividades en los comedores, ayudar a
-          transportar las donaciones, ser soporte emocional para aquellas
-          personas que lo necesiten y ayudar en lo que sea necesario!!
+    <main>
+      <section class="seccion-principal">
+        <h1>DONA Y MEJORA UNA VIDA</h1>
+        <p class="slogan">
+          Cada donación marca la diferencia en la vida de quienes más lo
+          necesitan. Con tu apoyo, brindamos comida, ropa y esperanza a miles de
+          personas.
         </p>
-      </div>
-      <div>
-        <img class="grafico" src="/img/apoyo/rectangulo.png" alt="" />
-      </div>
-    </div>
+        <p class="slogan-secundario">¡Únete hoy y ayuda a cambiar una vida!</p>
 
-    <!-- ! Seccion voluntariado coorporativo -->
-    <div class="seccion-voluntariado-coorp">
-      <h2 class="titulo-coorporativo">VOLUNTARIADO CORPORATIVO</h2>
-      <p class="parrafo-coorpo">
-        A través del Voluntariado Corporativo, tu empresa puede participar en
-        iniciativas que fortalecen comunidades, ayudando a quienes más lo
-        necesitan. Únete a nuestras actividades y crea un impacto positivo en
-        conjunto con tu equipo.
-      </p>
+        <div class="img-principales">
+          <img src="/img/apoyo/1.png" alt="" />
+          <img src="/img/apoyo/2.png" alt="" />
+        </div>
 
-      <h3 class="titulo-coorporativo">FORMULARIO</h3>
+        <hr />
 
-      <form id="formulario" action="#">
-        <div>
+        <div class="participacion">
           <div>
-            <input
-              type="text"
-              name=""
-              id="empresa"
-              placeholder="Nombre de la empresa"
-            />
+            <h3 class="titulos-terciarios">Hazte Socio.</h3>
+            <p>
+              Dona un monto mensual que será cargado a tu cuenta (pago con
+              débito y crédito). Elige el monto de tu donación:
+            </p>
+            <button>Hazte Socio</button>
           </div>
           <div>
-            <input type="tel" name="" id="telefono" placeholder="Telefono" />
+            <h3 class="titulos-terciarios">Donacion Unica.</h3>
+            <p>
+              Puedes aportar transfiriendo el monto que tú quieras directamente
+              a nuestra cuenta corriente.
+            </p>
+            <button>Link de Pago</button>
           </div>
-          <div>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Correo Electronico"
-            />
+        </div>
+      </section>
+
+      <!-- ! Sección voluntariados -->
+      <div class="seccion-voluntariados">
+        <h2>VOLUNTARIADOS</h2>
+        <p>
+          En esta sección podrás revisar nuestras actividades y otros materiales
+          como presentaciones, seminarios, artículos de prensa y mucho más.
+        </p>
+        <img src="/img/apoyo/img-productos.jpg" alt="" />
+      </div>
+
+      <!-- ! Sección voluntariado personal -->
+      <div class="seccion-voluntariado-personal">
+        <div class="fondoBurbuja">
+          <h2>VOLUNTARIADO DE PERSONAL</h2>
+          <p class="texto-voluntariado">
+            Consiste en participar de las actividades en los comedores, ayudar a
+            transportar las donaciones, ser soporte emocional para aquellas
+            personas que lo necesiten y ayudar en lo que sea necesario!!
+          </p>
+        </div>
+
+        <img class="grafico" src="/img/apoyo/voluntario-personal.png" alt="" />
+      </div>
+
+      <!-- ! Sección voluntariado corporativo -->
+      <div class="seccion-voluntariado-coorp">
+        <h2>VOLUNTARIADO CORPORATIVO</h2>
+        <p>
+          A través del Voluntariado Corporativo, tu empresa puede participar en
+          iniciativas que fortalecen comunidades, ayudando a quienes más lo
+          necesitan. Únete a nuestras actividades y crea un impacto positivo en
+          conjunto con tu equipo.
+        </p>
+
+        <h2>FORMULARIO</h2>
+
+
+        <form id="formulario" action="#">
+          <div class="inputContainer">
+            <div>
+              <input
+                type="text"
+                name=""
+                id="empresa"
+                placeholder="Nombre de la empresa"
+              />
+            </div>
+            <div>
+              <input type="tel" name="" id="telefono" placeholder="Telefono" />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Correo Electronico"
+              />
+            </div>
+            <div
+              class="editable"
+              contenteditable="true"
+              aria-placeholder="Hika"
+            ></div>
           </div>
           <button class="buttonEnviar" type="submit" disabled>Enviar</button>
-          <button class="button" type="reset">Reset</button>
-        </div>
-        <div>
-          <textarea
-            class="custom-textarea"
-            name=""
-            id="mensaje"
-            placeholder="Mensaje opcional"
-          ></textarea>
-        </div>
-      </form>
-    </div>
 
-    <c-footer></c-footer>
+        </form>
+      </div>
+      <c-footer></c-footer>
+    </main>
 
     <script src="/js/formulario.js" type="module"></script>
   </body>

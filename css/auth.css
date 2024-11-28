@@ -123,3 +123,69 @@ input[name="form"] {
   font-weight: 900;
   cursor: pointer;
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #e74c3c;
+}
+
+.modal-content p {
+  margin: 20px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #fff;
+}
+
+.loader {
+  border: 4px solid #f3f3f3; /* Color del borde exterior */
+  border-top: 4px solid #3498db; /* Color del borde superior (animado) */
+  border-radius: 50%; /* Hace que sea un círculo */
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite; /* Animación de giro */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
