@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/userpanel.css" />
     <link rel="stylesheet" href="./css/global.css" />
-    <script src="/js/protected.js"></script>
+
     <title>Panel de usuario</title>
   </head>
   <body>
     <main>
       <section class="section1">
-        <button onclick="loadContent('donations')">Donar</button>
+        <button id="donations">Donar</button>
         <div></div>
-        <button onclick="loadContent('my-donations')">Tus donaciones</button>
+        <button id="my-donations">Tus donaciones</button>
         <div></div>
-        <button onclick="loadContent('voluntary')">Voluntariado</button>
+        <button id="voluntary">Voluntariado</button>
       </section>
       <section class="section2" id="content-area">
         <div class="voluntaryContainer">
@@ -38,5 +38,6 @@
       </section>
     </main>
   </body>
+  <script src="/js/protected.js"></script>
   <script src="/js/panel.js"></script>
 </html>

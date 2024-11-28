@@ -30,7 +30,6 @@ document.querySelector("#form").addEventListener("submit",(e)=>{
 })
 
 
-
 const contentArea = document.getElementById("content-area");
 
 function loadContent(section) {
@@ -111,3 +110,7 @@ function loadContent(section) {
       break;
   }
 }
+
+document.getElementById("donations").addEventListener("click",()=>loadContent("donations"))
+document.getElementById("my-donations").addEventListener("click",()=>loadContent("my-donations"))
+document.getElementById("voluntary").addEventListener("click",()=>loadContent("voluntary"))
