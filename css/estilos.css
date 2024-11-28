@@ -12,6 +12,7 @@
   max-width: 700px;
   width: 90%;
 }
+
 hr {
   border: none;
   border-top: 5px dashed var(--color);
@@ -96,6 +97,7 @@ h2 {
   max-width: 700px;
   width: 90%;
 }
+
 
 .fondoBurbuja {
   display: flex;
@@ -203,3 +205,4 @@ input {
     width: 90%;
   }
 }
+
