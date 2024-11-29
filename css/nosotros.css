@@ -57,6 +57,9 @@
   color: #ffffff;
   text-align: center;
 }
+.imgs a {
+  text-decoration: none;
+}
 .colaborar {
   background-color: #f9c986;
 }

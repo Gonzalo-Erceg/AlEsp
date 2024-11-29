@@ -119,6 +119,9 @@ section {
 .DonationContain a:hover {
   transform: scale(01.1);
 }
+.voluntaryContainer {
+  margin-top: 30px;
+}
 
 @media (max-width: 1200px) {
   .section1,
