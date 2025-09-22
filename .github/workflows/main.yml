@@ -1,0 +1,17 @@
+name: Verificar existencia de token
+
+on:
+   workflow_dispatch:
+
+jobs:
+  check-token:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if token secret is set
+        id: check-secret
+        run: |
+          if [ -z "${{ secrets.linus2 }}" ]; then
+            echo "::error::El secreto 'MY_TOKEN' no está configurado."
+            exit 1
+          fi
+          echo "El token se ha encontrado."
