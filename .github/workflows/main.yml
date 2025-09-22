@@ -10,7 +10,7 @@ jobs:
       - name: Check if token secret is set
         id: check-secret
         run: |
-          if [ -z "${{ secrets.linus2 }}" ]; then
+          if [ -z "${{ secrets.LINUS2 }}" ]; then
             echo "::error::El secreto 'MY_TOKEN' no está configurado."
             exit 1
           fi
